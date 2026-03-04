@@ -1,36 +1,27 @@
 import { useState } from "react";
 import axios from "../api/axios";
-import { useNavigate } from "react-router-dom";
 import "../styles/login.css";
+import { useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function Register() {
 
+  const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
 
   const navigate = useNavigate();
 
-  const handleLogin = async () => {
+  const handleRegister = async () => {
 
-    try {
+    await axios.post("/users/register",{
+      name,
+      email,
+      password
+    });
 
-      const res = await axios.post("/users/login",{
-        email,
-        password
-      });
+    alert("User registered successfully");
 
-      // store JWT
-      localStorage.setItem("token", res.data);
-
-      // navigate to dashboard
-      navigate("/dashboard");
-
-    } catch(error) {
-
-      alert("Login failed");
-
-    }
-
+    navigate("/");
   };
 
   return (
@@ -39,7 +30,14 @@ export default function Login() {
 
       <div className="login-card">
 
-        <h2 className="login-title">Job Tracker Login</h2>
+        <h2 className="login-title">Create Account</h2>
+
+        <input
+          className="login-input"
+          placeholder="Name"
+          value={name}
+          onChange={(e)=>setName(e.target.value)}
+        />
 
         <input
           className="login-input"
@@ -58,13 +56,23 @@ export default function Login() {
 
         <button
           className="login-button"
-          onClick={handleLogin}
+          onClick={handleRegister}
         >
-          Login
+          Register
         </button>
+        <p style={{textAlign:"center", marginTop:"15px"}}>
+
+  Have an account?
+  <a href="/" style={{color:"#2563eb"}}>
+    Login
+  </a>
+
+</p>
+        
 
       </div>
 
     </div>
+
   );
 }

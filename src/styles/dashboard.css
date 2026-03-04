@@ -1,0 +1,75 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.job-table th {
+  text-align: left;
+  padding: 14px;
+  font-size: 14px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.job-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.job-table tr:hover {
+  background: #f9fafb;
+}
+
+.empty-row {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+}
+
+/* Status badges */
+
+.status {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-applied {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-interview {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-offer {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
