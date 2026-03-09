@@ -1,6 +1,8 @@
 /* Page Background */
 
 .login-container {
+  position: relative;
+
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,6 +12,45 @@
 
   /* Soft light-blue gradient */
   background: linear-gradient(135deg, #f0f7ff, #e6f0ff, #f7fbff);
+
+  overflow: hidden;
+}
+
+
+/* Abstract Background Shapes */
+
+.login-container::before {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  background: #bfdbfe;
+
+  border-radius: 50%;
+
+  top: -150px;
+  left: -150px;
+
+  filter: blur(120px);
+}
+
+.login-container::after {
+  content: "";
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  background: #93c5fd;
+
+  border-radius: 50%;
+
+  bottom: -150px;
+  right: -150px;
+
+  filter: blur(120px);
 }
 
 
@@ -28,6 +69,9 @@
     0 4px 8px rgba(0, 90, 170, 0.04);
 
   transition: transform 0.2s ease;
+
+  position: relative;
+  z-index: 1;
 }
 
 .login-card:hover {
