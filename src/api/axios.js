@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const API = axios.create({
-  baseURL:"http://localhost:8081/api"
+  baseURL:"https://jobtracker-backend-1bql.onrender.com"
 });
 
 API.interceptors.request.use((req)=>{
