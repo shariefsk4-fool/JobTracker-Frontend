@@ -7,23 +7,23 @@ This UI allows users to register, login, and manage job applications through the
 
 ## 🚀 Features
 
-* ✅ User Registration UI
-* ✅ User Login UI
-* ✅ JWT Authentication Integration
-* ✅ Protected Routes
-* ✅ API Integration with Spring Boot Backend
-* ✅ Modern Glassmorphism UI
-* ✅ Responsive Login & Register Pages
+- ✅ User Registration UI
+- ✅ User Login UI
+- ✅ JWT Authentication Integration
+- ✅ Protected Routes
+- ✅ API Integration with Spring Boot Backend
+- ✅ Modern Glassmorphism UI
+- ✅ Responsive Login & Register Pages
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Frontend:** React
-* **Build Tool:** Vite
-* **Routing:** React Router
-* **HTTP Client:** Axios
-* **Styling:** CSS
+- **Frontend:** React
+- **Build Tool:** Vite
+- **Routing:** React Router
+- **HTTP Client:** Axios
+- **Styling:** CSS
 
 ---
 
@@ -113,11 +113,11 @@ Make sure the backend server is running before starting the frontend.
 
 ## 📈 Future Improvements
 
-* Job Dashboard UI
-* Job Application Analytics
-* Dark Mode Support
-* Notification System
-* UI Animations
+- Job Dashboard UI
+- Job Application Analytics
+- Dark Mode Support
+- Notification System
+- UI Animations
 
 ---
 
